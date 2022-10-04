@@ -12,12 +12,9 @@ import { Image } from "@astrojs/image/components";
 
 Following is an example blog post written in an md file. You can find me @ src/pages/posts/hello-world.md. Here you can add/update/delete details and watch the changes live when running in develop mode.
 
-<Image
-	src="https://picsum.photos/id/1025/550/460"
-	alt="A covered up pug in the woods"
-	width={550}
-	height={460}
-/>
+
+<Picture src={import("src/assets/images/Pug.jpg")}widths={[100, 200, 400, 800, 1600]} aspectRatio="4:3" sizes="(max-width: 1600px) 100vw, 1600px" alt="descriptive text" />
+
 
 <Picture src={import("src/assets/images/lighthouse.jpg")} widths={[100, 200, 400, 800, 1600]} sizes="(max-width: 1600px) 100w, 1600px" alt="descriptive text" />
 
